@@ -43,6 +43,7 @@ the reaosn I built this to begin with.
 * `GP22`: ATH_TX_H
 * `GP26`: nTWLRST (DSi system reset)
 * `GP27`: nDETECT (0=DWM inserted)
+* `GP28`: JTAG.CPURST (CPU reset if JTAG.ERST=1 on boot. else ~{WIFI_RST} is the reset)
 
 ## Bill of Materials
 
@@ -51,12 +52,13 @@ the reaosn I built this to begin with.
 | C1, C3    | 1 uF   | 0603                | 1V8 LDO cap |
 | C3-C8     | 100 nF | 0603                | decoupling caps |
 | J1        | Molex SlimStack 52991-0508 | | WiFi module connector. must be this exact part number. |
-| J2, J5    | 1x8-pin header | 2.54mm pitch | |
+| J2        | 1x9-pin header | 2.54mm pitch | |
 | J3        | 10-pin Cortex Debug connector | 1.27mm | dual SMD/THT footprint |
-| J4        | 1x5-pin header | 2.54mm pitch | |
+| J4        | 1x6-pin header | 2.54mm pitch | |
+| J5        | 1x8-pin header | 2.54mm pitch | |
 | J6        | 1x4-pin header | 2.54mm pitch | |
 | R1-R6     | 22 Ohm         | 0603         | |
-| R7-R18    | 48 kOhm        | 0603         | |
+| R7-R17    | 47 kOhm        | 0603         | |
 | U1        | Raspberry Pico | Raspberry Pico | |
 | U2        | 3.3V-&gt;1.8V LDO | SOT-23-5  | TI TLV70018DDC, Diodes AP7343D-18W5-7 |
 | U3-U5     | 3.3V&lt;-&gt;1.8V level shifter | TSSOP-14 | TI TXU0304, Nexperia NSU0304 |
