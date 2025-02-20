@@ -61,7 +61,7 @@ the reaosn I built this to begin with.
 | R7-R17    | 47 kOhm        | 0603         | |
 | U1        | Raspberry Pico | Raspberry Pico | |
 | U2        | 3.3V-&gt;1.8V LDO | SOT-23-5  | TI TLV70018DDC, Diodes AP7343D-18W5-7 |
-| U3-U5     | 3.3V&lt;-&gt;1.8V level shifter | TSSOP-14 | TI TXU0304, Nexperia NSU0304 |
+| U3-U5     | 3.3V&lt;-&gt;1.8V level shifter | TSSOP-14 | TI TXU0304, Nexperia NXU0304 |
 
 ## Dependencies
 
